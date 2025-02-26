@@ -51,3 +51,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 How is it build?
 
 In public file you can find all the static files, in this situation there are all the jpg from the books.
+
+In [ID] each of the static routes is generated.
