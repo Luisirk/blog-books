@@ -48,4 +48,6 @@ All commands are run from the root of the project, from a terminal:
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 
-Aqui empieza com funciona
+How is it build?
+
+In public file you can find all the static files, in this situation there are all the jpg from the books.
