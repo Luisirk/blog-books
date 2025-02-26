@@ -22,11 +22,12 @@ const { Content }= await render (book)
 <Layout title={`${title}`}>
     <div class="flex gap-10 ">
         <aside class="flex flex-col items-center gap-4">
+            <a href='/' class="hover:underline opacity-70">← Volver atrás</a>
             <img transition:name={`img-${slug}`} class="rounded w-72 h-auto" src={`/${img}`} alt={title}>
 
         </aside>
         <main class="max-w-xl">
-            <h1 class="text-4xl font-bold mb-4">{title}</h1>
+            <h1 transition:name={`img-${title}`} class="text-4xl font-bold mb-4">{title}</h1>
             <div class="prose prose-invert">
                 <Content/>
             </div>
