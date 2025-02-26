@@ -13,23 +13,31 @@ const books = await getCollection('books')
 	</main>
 
 	<section aria-label="Libros leidos" class="max-w-7xl mx-auto px-8">
-		<div class="grid gap-8 md:grid-cols-4">
-			<div>
+		<div class="px-4 mx-auto max-w-screen-xl">
+			<div class="grid gap-6 md:grid-cols-2">
 			{
 				books.map(book=>{
 					const {slug, data} = book
 					const { title, author, img, pages, description, buy } = data
 					return(
+
 						<article class="flex">
-							<a href={`/libro/${slug}`} class="mb-2 xl:mb-0 transition duration-1000 hover:scale-150">
-								<img class="mr-58 w-48 rounded" src={`/${img}`} alt={title} class="w-full rounded-lg"/>
-							</a>
-							<div class="flex flex-col justify-center">
-								<h2 class="mb-2 text-3xl font-bold lading-tight text-white">
+							
+							<a href={`/libro/${slug}`} class="mb-2 xl:mb-0 transition duration-210 ease-out group">
+								
+								<img src={`/${img}`} 
+									alt={title} 
+									class="mr-5 w-58 rounded transition-transform  duration-90 ease-in  group-hover:scale-130 group-hover:duration-210 "													
+									/>
+							</a> 
+
+							<div class="flex flex-col justify-center ">
+								
+								<h2 class="ml-4 mb-2 text-2xl font-bold leading-tight text-white">
 									{title}
 								</h2>
-								<p class = "mb-4 text-gray-300 max-w-sm"> {description}</p>
-								<span class="text-xs text-white"> 📄  {pages} hojas</span>
+								<p class = "ml-4 mb-4 text-gray-300 max-w-sm"> {description}</p>
+								<span class="text-xs ml-4 text-gray-200"> 📄  {pages} hojas</span>
 							</div>
 						</article>
 					)
