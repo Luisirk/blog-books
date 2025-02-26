@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";  
+import { getCollection, render } from "astro:content";  
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths(){
@@ -10,9 +10,27 @@ export async function getStaticPaths(){
         props: {book}
     }))
 }
+
+const {book}= Astro.props
+const {data, slug}= book
+const {title, author, img, pages, description, buy}= data
+
+const { Content }= await render (book)
+
     
 ---
-<Layout>
+<Layout title={`${title}`}>
+    <div class="flex gap-12 ">
+        <aside class="flex flex-col items-center gap-4">
+            <img class="rounded w-72 h-auto" src={`/${img}`}>
 
+        </aside>
+        <main>
+            <div class="">
+                <Content/>
+            </div>
+
+        </main>
+    </div>
 
 </Layout>
