@@ -25,11 +25,11 @@ const books = await getCollection('books')
 								<img class="mr-58 w-48 rounded" src={`/${img}`} alt={title} class="w-full rounded-lg"/>
 							</a>
 							<div class="flex flex-col justify-center">
-								<h2 class="mb-2 text-3xl font-bold lading-tight text-black">
+								<h2 class="mb-2 text-3xl font-bold lading-tight text-white">
 									{title}
 								</h2>
-								<p class = "mb-4 text-gray-300 max-w-sm">:description</p>
-								<span class="text-xs"> 📄 hojas en {pages} hojas</span>
+								<p class = "mb-4 text-gray-300 max-w-sm"> {description}</p>
+								<span class="text-xs text-white"> 📄  {pages} hojas</span>
 							</div>
 						</article>
 					)
