@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";  
+import { SHOW_BUY_BUTTON } from "astro:env/server";
 import Layout from "../../layouts/Layout.astro";
-
+import BuyButton from "../../components/BuyButton.astro";
 export async function getStaticPaths(){
     const books = await getCollection("books");
 
@@ -14,8 +15,8 @@ export async function getStaticPaths(){
 const {book}= Astro.props
 const {data, slug}= book
 const {title, author, img, pages, description, buy}= data
-
 const { Content }= await render (book)
+export const prerender = true
 
     
 ---
@@ -24,6 +25,9 @@ const { Content }= await render (book)
         <aside class="flex flex-col items-center gap-4">
             <a href='/' class="hover:underline opacity-70">← Volver atrás</a>
             <img transition:name={`img-${slug}`} class="rounded w-72 h-auto" src={`/${img}`} alt={title}>
+            {
+                SHOW_BUY_BUTTON && <BuyButton server:defer buy={buy} />
+            }
 
         </aside>
         <main class="max-w-xl">
