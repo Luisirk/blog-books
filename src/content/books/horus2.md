@@ -6,7 +6,7 @@ img: horus2.jpg
 pages: '352'
 description: Las raíces de la herejía
 buy:
-    Spain: hhttps://www.casadellibro.com/libro-la-herejia-de-horus-2-falsos-dioses/9788445003107/2794008
+    Spain: https://www.casadellibro.com/libro-la-herejia-de-horus-2-falsos-dioses/9788445003107/2794008
     
     UK: https://www.blacklibrary.com/the-horus-heresy/novels/False-Gods-eBook.html
      
