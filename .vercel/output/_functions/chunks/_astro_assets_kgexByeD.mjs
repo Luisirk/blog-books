@@ -1,5 +1,5 @@
 import { i as isRemotePath, j as joinPaths } from './path_Cvt6sEOY.mjs';
-import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, o as MissingImageDimension, p as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, q as UnsupportedImageConversion, s as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, t as ExpectedImageOptions, v as ExpectedNotESMImage, w as InvalidImageService, x as toStyleString, c as createComponent, e as createAstro, y as ImageMissingAlt, m as maybeRenderHead, b as addAttribute, z as spreadAttributes, a as renderTemplate } from './astro/server_K-WvYpO4.mjs';
+import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, o as MissingImageDimension, p as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, q as UnsupportedImageConversion, s as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, t as ExpectedImageOptions, v as ExpectedNotESMImage, w as InvalidImageService, x as toStyleString, c as createComponent, e as createAstro, y as ImageMissingAlt, m as maybeRenderHead, b as addAttribute, z as spreadAttributes, a as renderTemplate } from './astro/server_CrnwJxEq.mjs';
 import { D as DEFAULT_OUTPUT_FORMAT, a as VALID_SUPPORTED_FORMATS, b as DEFAULT_HASH_PROPS } from './consts_BmVDRGlB.mjs';
 
 const DEFAULT_RESOLUTIONS = [
@@ -1221,7 +1221,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_CxQXaDej.mjs'
+      './sharp_C6NxtSeg.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -1951,4 +1951,4 @@ const _astro_assets = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePrope
   isLocalService
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { _astro_assets as _, isRemoteAllowed as a, baseService as b, getConfiguredImageService as g, imageConfig as i, lookup as l, parseQuality as p };
+export { _astro_assets as _, baseService as b, imageConfig as i, parseQuality as p };

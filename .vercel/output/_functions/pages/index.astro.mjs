@@ -1,5 +1,5 @@
-import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderTransition } from '../chunks/astro/server_K-WvYpO4.mjs';
-import { g as getCollection, $ as $$Layout } from '../chunks/Layout_BVLWIv9L.mjs';
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderTransition } from '../chunks/astro/server_CrnwJxEq.mjs';
+import { g as getCollection, $ as $$Layout } from '../chunks/Layout_CyYaW_6c.mjs';
 /* empty css                                 */
 export { renderers } from '../renderers.mjs';
 

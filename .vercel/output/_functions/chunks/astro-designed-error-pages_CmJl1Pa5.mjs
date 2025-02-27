@@ -1,4 +1,4 @@
-import { N as NOOP_MIDDLEWARE_HEADER, n as escape, D as DEFAULT_404_COMPONENT } from './astro/server_K-WvYpO4.mjs';
+import { N as NOOP_MIDDLEWARE_HEADER, n as escape, D as DEFAULT_404_COMPONENT } from './astro/server_CrnwJxEq.mjs';
 import { p as parse } from './parse_BxWlCxqB.mjs';
 
 var cookie = {};

@@ -1,7 +1,7 @@
 import pLimit from 'p-limit';
 import { r as removeBase, i as isRemotePath, p as prependForwardSlash } from './path_Cvt6sEOY.mjs';
 import { V as VALID_INPUT_FORMATS } from './consts_BmVDRGlB.mjs';
-import { A as AstroError, R as RenderUndefinedEntryError, c as createComponent, u as unescapeHTML, a as renderTemplate, U as UnknownContentCollectionError, g as renderUniqueStylesheet, h as renderScriptElement, i as createHeadAndContent, r as renderComponent, e as createAstro, b as addAttribute, j as renderScript, k as renderHead, l as renderSlot } from './astro/server_K-WvYpO4.mjs';
+import { A as AstroError, R as RenderUndefinedEntryError, c as createComponent, u as unescapeHTML, a as renderTemplate, U as UnknownContentCollectionError, g as renderUniqueStylesheet, h as renderScriptElement, i as createHeadAndContent, r as renderComponent, e as createAstro, b as addAttribute, j as renderScript, k as renderHead, l as renderSlot } from './astro/server_CrnwJxEq.mjs';
 import { u as unflatten } from './parse_BxWlCxqB.mjs';
 /* empty css                         */
 
@@ -4466,7 +4466,7 @@ class ImmutableDataStore {
    */
   static async fromModule() {
     try {
-      const data = await import('./_astro_data-layer-content_DcD6jOHM.mjs');
+      const data = await import('./_astro_data-layer-content_BCafToTb.mjs');
       if (data.default instanceof Map) {
         return ImmutableDataStore.fromMap(data.default);
       }
@@ -4613,7 +4613,7 @@ const CONTENT_LAYER_IMAGE_REGEX = /__ASTRO_IMAGE_="([^"]+)"/g;
 async function updateImageReferencesInBody(html, fileName) {
   const { default: imageAssetMap } = await import('./content-assets_DleWbedO.mjs');
   const imageObjects = /* @__PURE__ */ new Map();
-  const { getImage } = await import('./_astro_assets_kNVQOQAq.mjs').then(n => n._);
+  const { getImage } = await import('./_astro_assets_kgexByeD.mjs').then(n => n._);
   for (const [_full, imagePath] of html.matchAll(CONTENT_LAYER_IMAGE_REGEX)) {
     try {
       const decodedImagePath = JSON.parse(imagePath.replaceAll("&#x22;", '"'));
