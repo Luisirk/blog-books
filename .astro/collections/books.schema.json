@@ -1,0 +1,60 @@
+{
+  "$ref": "#/definitions/books",
+  "definitions": {
+    "books": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "img": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "buy": {
+          "type": "object",
+          "properties": {
+            "Spain": {
+              "type": "string",
+              "format": "uri"
+            },
+            "UK": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "Spain",
+            "UK"
+          ],
+          "additionalProperties": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "author",
+        "date",
+        "img",
+        "pages",
+        "description",
+        "buy"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
