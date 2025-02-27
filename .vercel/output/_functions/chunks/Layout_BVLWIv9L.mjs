@@ -4466,7 +4466,7 @@ class ImmutableDataStore {
    */
   static async fromModule() {
     try {
-      const data = await import('./_astro_data-layer-content_CeIJgy-u.mjs');
+      const data = await import('./_astro_data-layer-content_DcD6jOHM.mjs');
       if (data.default instanceof Map) {
         return ImmutableDataStore.fromMap(data.default);
       }
