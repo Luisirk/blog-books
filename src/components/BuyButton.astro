@@ -10,11 +10,12 @@ const storeCountry = country === SPAIN ? 'Spain' : 'UK'
 const countryName = country === SPAIN ? 'España' : 'United Kingdom'
 
 const { buy } = Astro.props
-const url = buy[storeCountry]
+const Spain = buy.Spain
+const UK = buy.UK
 ---
 
 <a
-  href={url}
+  href={Spain}
   title="Comprar libro"
   target="_blank"
   rel="noopener noreferrer"
@@ -24,7 +25,7 @@ const url = buy[storeCountry]
   <CDL />
 </a>
 <a
-  href={url}
+  href={UK}
   title="Comprar libro"
   target="_blank"
   rel="noopener noreferrer"
