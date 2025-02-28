@@ -17,6 +17,9 @@ importers:
       astro:
         specifier: ^5.3.1
         version: 5.3.1(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.8)(typescript@5.7.3)
+      p-limit:
+        specifier: ^6.2.0
+        version: 6.2.0
       tailwindcss:
         specifier: ^4.0.9
         version: 4.0.9
